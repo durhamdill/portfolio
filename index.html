@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <script src="https://use.typekit.net/zpy3vhn.js"></script>
@@ -8,7 +9,11 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Katy Dillard</title>
   </head>
+
   <body>
+    <div id="nav-bar">
+      <p class="nav-name">katy dillard</p>
+    </div>
     <h1>katy</h1>
 
       <div class="double-box">
@@ -18,5 +23,17 @@
       <div class="about-box">
         <p>test</p>
       </div>
+
+  <script type="text/javascript">
+    window.addEventListener("scroll", bringmenu);
+
+  function bringmenu() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("nav-bar").style.top = "0";
+    } else {
+        document.getElementById("nav-bar").style.top = "100%";
+    }
+  }
+  </script>
   </body>
 </html>

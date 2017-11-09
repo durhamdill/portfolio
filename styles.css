@@ -4,11 +4,30 @@ html {
 
 body {
   margin: 0;
+  height: 2000px;
 }
 
 h1 {
   font-family: lust;
   font-size: 6rem;
+}
+
+#nav-bar {
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 100%;
+  -webkit-transition: bottom 2s;
+  transition: bottom 2s;
+  /*visibility: hidden;*/
+}
+
+.nav-name {
+  color: white;
+  font-family: lust;
+  font-size: 1.5rem;
+  /*position: absolute;*/
 }
 
 .double-box {
@@ -20,6 +39,6 @@ h1 {
 }
 
 .about-box {
-  background-color: yellow;
+  background-color: #FCEE21;
   height: 250px;
 }
