@@ -14,20 +14,56 @@
     <div id="nav-bar">
       <p class="nav-name">katy dillard</p>
     </div>
-    <h1>katy</h1>
 
-      <div class="double-box">
-        <p class="double-box">Happiness lies in the joy of achievement and the thrill of creative effort.</p>
+    <div class="main-content">
+
+    <h1 class="main-name">katy</h1>
+
+    <ul class="main-nav">
+      <li>Work</li>
+      <li>About</li>
+      <li>Connect</li>
+    </ul>
+
+      <div class="double-box work1">
+        <div class="border2">
+        <h2 class="subhead-text">Title Example</h2>
+        <p class="paragraph-text">Happiness lies in the joy of achievement and the thrill of creative effort.</p>
+        </div>
       </div>
+
+      <div class="double-box work2">
+        <h2 class="subhead-text">Title Example</h2>
+        <p class="paragraph-text">Happiness lies in the joy of achievement and the thrill of creative effort.</p>
+      </div>
+
+      <div class="double-box work3">
+        <h2 class="subhead-text">Title Example</h2>
+        <p class="paragraph-text">Happiness lies in the joy of achievement and the thrill of creative effort.</p>
+      </div>
+
+      <div class="double-box work4">
+        <h2 class="subhead-text">Title Example</h2>
+        <p class="paragraph-text">Happiness lies in the joy of achievement and the thrill of creative effort.</p>
+      </div>
+
+      <div class="double-box work5">
+        <h2 class="subhead-text">Title Example</h2>
+        <p class="paragraph-text">Happiness lies in the joy of achievement and the thrill of creative effort.</p>
+      </div>
+
+    </div>
 
       <div class="about-box">
         <p>test</p>
       </div>
 
-  <script type="text/javascript">
-    window.addEventListener("scroll", bringmenu);
 
-  function bringmenu() {
+
+  <script type="text/javascript">
+    window.addEventListener("scroll", showNav);
+
+  function showNav() {
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         document.getElementById("nav-bar").style.top = "0";
     } else {
