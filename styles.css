@@ -4,6 +4,7 @@ html {
 
 body {
   height: 2000px;
+  font-family: "brandon-grotesque",sans-serif;
 }
 
 #nav-bar {
@@ -20,14 +21,14 @@ body {
 }
 
 .main-content {
-  width: 90%;
+  width: 80%;
   height: 800px;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
   /*border: 1px solid red;*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-gap: 30px;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 30px 50px;
 }
 
 .nav-name {
@@ -40,25 +41,38 @@ body {
 
 .double-box {
   /*display: inline-block;*/
-  /*width: 300px;
-  height: 350px;
-  margin: 5px;*/
+  width: 100%;
+  /*height: 350px;*/
   border: 2px solid black;
+  padding: 10px;
+  /*object-fit: cover;*/
+  /*flex-direction: column;*/
   /*display: flex;*/
   /*align-items: center;*/
   /*justify-content: center;*/
   /*box-shadow: 0 0 0 3px black*/
 }
 
-/*.border2 {
-  width: 95%;
-  height: 95%;
-  border: 1px solid black;
-}*/
+.image1 {
+  background-image: url("https://durhamdill.files.wordpress.com/2017/11/tourify-portfolio1.jpg");
+  background-size: cover;
+  background-position: center;
+  /*padding: 5px;*/
+  height: 98%;
+  width: 98%  ;
+}
+
+.image1:hover {
+  background-color: black;
+  background-image: none;
+  /*padding: 5px;*/
+  height: 98%;
+  width: 98%  ;
+}
 
 .main-name {
   font-family: lust;
-  font-size: 10rem;
+  font-size: 9rem;
   text-align: right;
   grid-column: 1/3;
 	grid-row: 1/2;
@@ -77,6 +91,8 @@ body {
   font-family: "brandon-grotesque",sans-serif;
   font-style: normal;
   font-weight: 100;
+  position: relative;
+  z-index: 200;
 }
 
 .main-nav li {
@@ -86,11 +102,22 @@ body {
 .work1 {
   grid-column: 3/4;
 	grid-row: 1/3;
+
+}
+
+.work2 img {
+  /*height: 400px;*/
+  width: 100%;
+  object-fit: contain;
+  object-position: 50% 50%;
+  /*padding: 10px;*/
 }
 
 .work2 {
   grid-column: 2/3;
 	grid-row: 2/4;
+  display: flex;
+  align-content: center;
 }
 
 .work3 {
@@ -100,7 +127,7 @@ body {
 
 .work4 {
   grid-column: 2/3;
-	grid-row: 4/5;
+	grid-row: 4/6;
 }
 
 .work5 {
@@ -119,13 +146,78 @@ body {
 .subhead-text {
   font-family: "brandon-grotesque",sans-serif;
   font-style: normal;
+  font-weight: 100;
+  font-size: 1.25rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  background: black;
+  color: white;
+  text-align: center;
+  /*position: relative;*/
+  top: -20px;
+  padding: 10px;
+  /*z-index: 500;*/
+}
+
+/*-----------ABOUT SECTION-----------*/
+
+.parallax-box {
+  background-image: url("https://www.welovesolo.com/wp-content/uploads/2016/11/45okjh2dmuucv14.jpg");
+  width: 100%;
+  height: 100px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-box {
+  background-color: #FEB80A;
+  height: 300px;
+  padding: 10px;
+  /*margin: 30px 0;*/
+  /*display:  flex;*/
+}
+
+.about-photo {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background-image: url("https://durhamdill.files.wordpress.com/2017/11/katy-photo-crop.jpg");
+  background-size: cover;
+  /*background-position: center;*/
+  float: left;
+  shape-outside: circle();
+  margin: 10px;
+  /*clip-path: circle();*/
+}
+
+.about-header {
+  font-style: normal;
   font-weight: 500;
   font-size: 1.25rem;
   letter-spacing: .2rem;
   text-transform: uppercase;
 }
 
-.about-box {
-  background-color: #FCEE21;
-  height: 250px;
+.about-text {
+  width: 800px;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  line-height: 25px;
+}
+
+.quote {
+  background-color: #FEB80A;
+  font-family: "brandon-grotesque",sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin: 10px;
+  padding: 10px;
 }
