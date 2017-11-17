@@ -54,6 +54,23 @@ body {
   margin: 10px;
 }
 
+.more-link:hover {
+  color: black;
+  background-color: #FEB80A;
+}
+
+.about-link {
+  color: black;
+  border: 1px solid black;
+  padding: 5px;
+  /*text-align: center;*/
+}
+
+.about-link:hover {
+  color:#FEB80A;
+  background-color: black;
+}
+
 /*--------TOP NAVIGATION BAR-------*/
 /*shows on page scroll*/
 
@@ -106,6 +123,7 @@ body {
   width: 80%;
   max-width: 1000px;
   margin: 0 auto 40px auto;
+  /*border: 1px solid #FEB80A;*/
 }
 
 .main-grid {
@@ -257,11 +275,27 @@ body {
 	grid-row: 4/6;
 }
 
+.image4 {
+  background-image: url("https://durhamdill.files.wordpress.com/2017/11/rad-portfolio.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #FEB80A;
+  height: 100%;
+}
+
 /*----Card 5 Styles & Content----*/
 
 .card5 {
   grid-column: 3/4;
 	grid-row: 3/5;
+}
+
+.image5 {
+  background-image: url("https://durhamdill.files.wordpress.com/2017/11/camp-greene-portfolio.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #FEB80A;
+  height: 100%;
 }
 
 /*-----------ABOUT SECTION-----------*/
@@ -280,8 +314,13 @@ body {
   background-color: #FEB80A;
   /*height: 250px;*/
   padding: 5%;
+  /*text-align: center;*/
   /*margin: 10px;*/
   /*display: flex;*/
+}
+
+.center-content-outline {
+  border: 1px solid #FEB80A;
 }
 
 .about-photo {
@@ -313,6 +352,11 @@ body {
   font-size: 1rem;
   letter-spacing: .1rem;
   line-height: 25px;
+}
+
+.about-links {
+  text-align: center;
+  /*margin: 10px; */
 }
 
 /*------CONTACT SECTION------*/
