@@ -78,10 +78,12 @@
 
 
     <!-- SnapWidget -->
-    <div class="instagram">
+    <!-- <div class="instagram">
       <script src="https://snapwidget.com/js/snapwidget.js"></script>
       <iframe src="https://snapwidget.com/embed/471190" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
-    </div>
+    </div> -->
+
+    <div id="instafeed"></div>
 
     <div class="parallax-box"></div>
 
@@ -190,6 +192,20 @@
       </svg>
     </div>
 
+
+  <script type="text/javascript" src="instafeed.min.js"></script>
+  <script type="text/javascript">
+    var feed = new Instafeed({
+      get: 'user',
+      limit: 8,
+      resolution: 'standard_resolution',
+      userId: 1694695, // Ex: 1374300081
+      clientId: "d28fe370c67f4b429a71ba680ed38ff0",
+      accessToken: '1694695.d28fe37.dcd8aef7478848b2a0b1168986b6d556',
+      template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+    });
+    feed.run();
+  </script>
 
   <script type="text/javascript">
     window.addEventListener("scroll", showNav);

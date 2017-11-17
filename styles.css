@@ -52,6 +52,10 @@ body {
   z-index: 1000;
 }
 
+/*1694695
+1694695.d28fe37.dcd8aef7478848b2a0b1168986b6d556*/
+
+
 .nav-name {
   color: white;
   font-family: lust;
@@ -300,4 +304,10 @@ body {
 .social-icon:hover {
   /*width: 60px;*/
   fill: #FEB80A;
+}
+
+#instafeed img {
+  width: 25%;
+  /*padding: 2px;*/
+  /*height: 500px;*/
 }
